@@ -1,12 +1,9 @@
 
-AI in System Development Assignments Repository
+# AI in System Development – Assignments Repository
 
-This repository contains all the assignments completed for the AI in System Development course.
+This repository contains all the assignments completed for the **AI in System Development** course.  
+Each assignment follows the given project requirements and includes submission details.
 
-All assignments have been added with their respective submission dates and follow the given project requirements.
+---
 
-
-
-Name-Naman Kumar Rai
-Roll.No-221020441
-Branch- DSAI
+## 📂 Repository Structure
