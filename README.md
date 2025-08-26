@@ -1,44 +1,75 @@
+#  Assignment-1: Semantic Search on Movie Plots
 
-# AI in System Development – Assignments Repository
-
-This repository contains all the assignments completed for the **AI in System Development** course.  
-Each assignment follows the given project requirements and includes submission details.
-
----
-
-## 📂 Repository Structure
-
-
+##  Student Details
+- **Name:** Naman Kumar Rai  
+- **Branch:** DSAI (Data Science and Artificial Intelligence)  
+- **Year:** 4th Year  
+- **Roll Number:** 221020441
 
 ---
 
-## 📌 Assignments Included
+##  Overview
+In this assignment, I built a **Semantic Search Engine for Movie Plots** using the **SentenceTransformers (all-MiniLM-L6-v2)** model.  
 
-### 1. Semantic Search Engine on Movie Plots  
-- **Description:** A semantic search system that allows searching across movie plots using embeddings and similarity measures.  
-- **Folder:** `Assignment01/`  
-- **Date Added:** August 26, 2025  
-
-### 2. [Next Assignment]  
-- **Description:** Coming soon.  
-- **Folder:** `Assignment02/`  
-- **Date Added:** [To be updated]  
+The workflow included:
+1. Loading the `movies.csv` dataset containing movie titles and plot summaries.  
+2. Encoding plots into vector embeddings using **SentenceTransformers**.  
+3. Implementing a search function `search_movies(query, top_n)` that ranks movies by **cosine similarity** between query and plot embeddings.  
+4. Testing with queries like `"spy thriller in Paris"`.  
+5. Verifying the solution by running **unit tests** (all passed ✅).  
 
 ---
 
-## 🗓 Submission Dates
+##  Setup & Running Instructions
 
-| Assignment                          | Date Added       |
-|-------------------------------------|------------------|
-| Semantic Search Engine (Assignment 01) | August 26, 2025 |
-| [Other Assignment]                  | [Date]           |
+### 1. Clone Repository
+```bash
+git clone https://github.com/Namanrai324/AI-Systems-Development--IIIT-Naya-Raipur
+cd Assignment-1
+```
+### 2. Create Virtual Environment
+```
+python -m venv venv
+```
+### 3. Activate Virtual Environment
+
+Windows:
+```
+venv\Scripts\activate
+```
+
+macOS/Linux:
+```
+source venv/bin/activate
+```
+### 4. Install Dependencies
+```
+pip install -r requirements.txt
+```
+
+### 5. Run Notebook
+
+The notebook **`movie_search_solution.ipynb`** is already included in the repository.  
+Simply **open it in your IDE (e.g., VS Code, Jupyter Lab, or any notebook viewer)** and **run all cells** to see the results of the semantic search queries.
 
 ---
 
-## 📬 Contact
-**Name:** Naman Kumar Rai  
-**Roll No.:** 221020441  
-**Email:** [namanr22102@iiitnr.edu.in](mailto:namanr22102@iiitnr.edu.in)  
+### 6. Run Unit Tests
+
+Open a terminal in the project folder and run the following command:
+
+```bash
+python -m unittest tests/test_movie_search.py -v
+```
+
+###  Results & Screenshots
+
+**Notebook Query Results** (e.g., running the query "spy thriller in Paris").
+
+<img src="/Assignment-1//images/query_result.png" alt="Query Result" width="600"/>
 
 ---
-✨ *This repository will be updated as new assignments are added.*
+
+**Unit Test Results** (all 4 tests passing in terminal).
+
+<img src="/Assignment-1/images/unit_tests.png" alt="Unit Tests" width="600"/>
